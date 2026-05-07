@@ -14,6 +14,13 @@ export const getBooksById = async (id) => {
     return book;
 }
 
+export const getCategory = async() =>{
+    const res = await fetch('https://bookbee-online-platform.vercel.app/category.json');
+    const categorys = await res.json();
+
+    return categorys;
+}
+
 export const getQuetos = async () => {
     const res = await fetch('https://bookbee-online-platform.vercel.app/quetos.json');
     const quetos = await res.json();
