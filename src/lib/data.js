@@ -6,7 +6,7 @@ export const getBooks = async() =>{
 }
 
 export const getQuetos = async() => {
-    const res = await fetch('');
+    const res = await fetch('https://bookbee-online-platform.vercel.app/quetos.json');
     const quetos = await res.json();
 
     return quetos;
