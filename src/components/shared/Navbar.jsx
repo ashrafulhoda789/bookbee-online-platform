@@ -55,7 +55,7 @@ const Navbar = () => {
                     </button>
                     <div>
                         <Link href={'/'}>
-                            <Image 
+                            <Image
                                 src={'/logo-nav.png'}
                                 alt="BookBee"
                                 width={80}
@@ -68,8 +68,13 @@ const Navbar = () => {
                 <ul className="hidden items-center gap-4 md:flex ">
                     {links}
                 </ul>
-                <div>
-                    <Button className={'bg-yellow-400 text-black transition hover:bg-yellow-300 font-bold'}>Login</Button>
+                <div className="flex gap-2">
+                    <Link href={'/signin'}>
+                        <Button className={'bg-yellow-400 text-black transition hover:bg-yellow-300 font-bold'}>Login</Button>
+                    </Link>
+                    <Link href={'/signup'}>
+                        <Button className={'bg-yellow-400 text-black transition hover:bg-yellow-300 font-bold'}>Register</Button>
+                    </Link>
                 </div>
             </header>
             {isMenuOpen && (

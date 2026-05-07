@@ -5,7 +5,7 @@ import Marquee from 'react-fast-marquee';
 const QuetosSection = async () => {
     const quetos = await getQuetos();
     return (
-        <div className="my-10 bg-yellow-50 rounded-2xl py-6">
+        <div className="my-10 bg-yellow-50 rounded-2xl py-6 px-2">
 
             <Marquee pauseOnHover={true} speed={50}>
                 {quetos.map((quote, index) => (
