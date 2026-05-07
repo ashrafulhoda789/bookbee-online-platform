@@ -11,7 +11,7 @@ const QuetosSection = async () => {
                 {quetos.map((quote, index) => (
                     <div
                         key={index}
-                        className="mx-4 bg-gradient-to-r from-blue-50 to-indigo-50 
+                        className="mx-4 bg-linear-to-r from-blue-50 to-indigo-50 
                         p-6 rounded-2xl shadow-md border hover:shadow-xl 
                         transition duration-300 w-75 h-50"
                     >
