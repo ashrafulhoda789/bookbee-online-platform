@@ -1,8 +1,6 @@
 import BorrowButton from "@/components/shared/BorrowButton";
 import { getBooksById } from "@/lib/data";
-import { Button } from "@heroui/react";
 import Image from "next/image";
-import { toast } from "react-toastify";
 
 const BooksDetailPage = async ({ params }) => {
     const { id } = await params;
@@ -10,7 +8,8 @@ const BooksDetailPage = async ({ params }) => {
     const book = await getBooksById(id);
     // console.log(book);
 
-   
+
+
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4 py-10">
 

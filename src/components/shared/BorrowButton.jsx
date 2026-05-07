@@ -1,12 +1,22 @@
 'use client'
+import { authClient } from "@/lib/auth-client";
 import { Button } from "@heroui/react";
+import { redirect } from "next/navigation";
 import { toast } from "react-toastify";
 
 
-const BorrowButton = ({book}) => {
+const BorrowButton = ({ book }) => {
+
+    const userData = authClient.useSession();
+    const user = userData.data?.user;
 
     const handleBorrowBtn = () => {
-        toast.success(`${book.title} Book is Borrowed successfully!`)
+        if (!user) {
+            redirect('/signin');
+        }
+        else {
+            toast.success(`${book.title} Book is Borrowed successfully!`);
+        }
     }
     return (
         <div>
