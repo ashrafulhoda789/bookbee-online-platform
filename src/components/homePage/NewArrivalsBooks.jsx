@@ -1,6 +1,5 @@
 import { getBooks } from '@/lib/data';
 import { Button } from '@heroui/react';
-import React from 'react';
 import Marquee from 'react-fast-marquee';
 
 const NewArrivalsBooks = async() => {
