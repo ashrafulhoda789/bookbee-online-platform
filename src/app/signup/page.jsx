@@ -12,6 +12,7 @@ import {
     TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 export default function SignUpPage() {
@@ -42,6 +43,12 @@ export default function SignUpPage() {
         }
 
     };
+
+    const handleGoogleSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+    }
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 py-10">
@@ -160,18 +167,18 @@ export default function SignUpPage() {
                     <div className="flex gap-2 pt-2">
 
                         <Button
+                            onClick={handleGoogleSignIn}
                             type="submit"
-                            className=" bg-yellow-400 hover:bg-yellow-500 
-                            text-gray-900 font-semibold"
+                            className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold"
                         >
                             <Check />
-                            SignUp
+                            Register
                         </Button>
 
                         <Button
                             type="reset"
-                            variant="secondary"
-                            className=""
+                            variant="outline"
+                            className="w-full text-yellow-600"
                         >
                             Reset
                         </Button>
@@ -180,6 +187,26 @@ export default function SignUpPage() {
 
                 </Form>
 
+                <div className="flex items-center gap-3 my-2 w-full">
+
+                    <div className="flex-1 h-px bg-gray-300"></div>
+
+                    <div className="text-sm text-gray-500 font-medium">
+                        OR
+                    </div>
+
+                    <div className="flex-1 h-px bg-gray-300"></div>
+
+                </div>
+
+                <Button
+                    variant="bordered"
+                    className="w-full border border-gray-300 hover:bg-gray-100 text-gray-700 font-medium py-6"
+                >
+                    <FaGoogle className="text-red-500 text-lg" />
+
+                    Continue with Google
+                </Button>
             </Card>
 
         </div>
