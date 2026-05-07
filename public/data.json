@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "A practical and science-backed guide to building good habits, breaking bad ones, and making tiny behavioral changes that lead to remarkable long-term personal and professional improvement.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co.com/j99C5zKc/atomic-habit.png",
+    "borrowCount": 320
+  },
+  {
+    "id": 2,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A philosophical and inspirational story about a young shepherd's journey to discover his destiny, follow his dreams, and understand the deeper meaning of life and personal legend.",
+    "category": "Story",
+    "available_quantity": 7,
+    "image_url": "https://i.ibb.co.com/1GyWhLnz/the-alchemist.webp",
+    "borrowCount": 280
+  },
+  {
+    "id": 3,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "description": "A thought-provoking exploration of human history, tracing the evolution of Homo sapiens from ancient ancestors to modern civilization, focusing on culture, religion, and technological development.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/title/Sapiens-L.jpg",
+    "borrowCount": 290
+  },
+  {
+    "id": 4,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A foundational handbook for software developers that teaches principles of writing clean, readable, and maintainable code using best practices in agile software craftsmanship.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/title/Clean%20Code-L.jpg",
+    "borrowCount": 350
+  },
+  {
+    "id": 5,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "description": "A personal finance classic that contrasts two financial mindsets and teaches essential lessons about money, investing, financial independence, and wealth building strategies.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/title/Rich%20Dad%20Poor%20Dad-L.jpg",
+    "borrowCount": 400
+  },
+  {
+    "id": 6,
+    "title": "Brief Answers to the Big Questions",
+    "author": "Stephen Hawking",
+    "description": "A collection of profound insights addressing the universe's biggest mysteries, including black holes, time travel, artificial intelligence, and the future of humanity.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/R4P4wMjF/stephen-hawking.jpg",
+    "borrowCount": 210
+  },
+  {
+    "id": 7,
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "description": "A timeless self-help book that explores the principles of success, mindset, and personal achievement based on studying the habits of wealthy and influential individuals.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "https://covers.openlibrary.org/b/title/Think%20and%20Grow%20Rich-L.jpg",
+    "borrowCount": 260
+  },
+  {
+    "id": 8,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "A classic fantasy adventure following Bilbo Baggins as he embarks on an unexpected journey filled with dragons, treasure, and epic encounters in Middle-earth.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/title/The%20Hobbit-L.jpg",
+    "borrowCount": 310
+  },
+  {
+    "id": 9,
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "An accessible yet deep exploration of cosmology, covering black holes, the Big Bang, space-time, and the fundamental nature of the universe.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/title/A%20Brief%20History%20of%20Time-L.jpg",
+    "borrowCount": 270
+  },
+  {
+    "id": 10,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "description": "A collection of insightful lessons about how people think about money, wealth, greed, and happiness, focusing on behavior rather than mathematics.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/title/The%20Psychology%20of%20Money-L.jpg",
+    "borrowCount": 330
+  },
+  {
+    "id": 11,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "description": "The beginning of a magical series that follows Harry Potter as he discovers his wizarding identity and enters a world of spells, friendship, and dark secrets.",
+    "category": "Story",
+    "available_quantity": 9,
+    "image_url": "https://covers.openlibrary.org/b/title/Harry%20Potter%20and%20the%20Sorcerer's%20Stone-L.jpg",
+    "borrowCount": 500
+  },
+  {
+    "id": 12,
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "A groundbreaking work in evolutionary biology explaining how genes drive evolution and behavior, shifting focus from organisms to genetic survival strategies.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/title/The%20Selfish%20Gene-L.jpg",
+    "borrowCount": 190
+  }
+]

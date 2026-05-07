@@ -5,10 +5,10 @@ import React from 'react';
 const NotFoundPage = () => {
     return (
         <div className='h-[80vh] flex justify-center items-center flex-col gap-6'>
-            <h2 className='font-bold text-5xl text-green-400'>This page is not found.</h2>
-            <p className='font-bold text-xl text-green-900'>Back to home page</p>
+            <h2 className='font-bold text-5xl '>This page is not found.</h2>
+            <p className='font-bold text-xl text-yellow-600'>Back to home page</p>
             <Link href={'/'}>
-                <Button className='bg-green-600'>Back To Home</Button>
+                <Button className='rounded-xl bg-yellow-400 px-6 py-3 font-semibold text-black transition hover:bg-yellow-300'>Back To Home</Button>
             </Link>
         </div>
     );

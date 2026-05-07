@@ -4,7 +4,7 @@ import React from 'react';
 const Banner = () => {
     return (
         <div
-            className="relative my-10 flex h-[500px] items-center justify-center overflow-hidden rounded-2xl bg-cover bg-center"
+            className="relative my-10 flex h-125 items-center justify-center overflow-hidden rounded-2xl bg-cover bg-center"
             style={{ backgroundImage: "url('/bee-banner.png')" }}
         >
             <div className="absolute inset-0 bg-black/40"></div>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Tech",
+    "slug": "tech",
+    "icon": "💻"
+  },
+  {
+    "id": 2,
+    "name": "Science",
+    "slug": "science",
+    "icon": "🔬"
+  },
+  {
+    "id": 3,
+    "name": "Story",
+    "slug": "story",
+    "icon": "📚"
+  }
+]
