@@ -4,3 +4,10 @@ export const getBooks = async() =>{
 
     return books;
 }
+
+export const getQuetos = async() => {
+    const res = await fetch('');
+    const quetos = await res.json();
+
+    return quetos;
+}
