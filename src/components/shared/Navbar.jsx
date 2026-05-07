@@ -1,6 +1,7 @@
 'use client'
 import { authClient } from "@/lib/auth-client";
 import { Button } from "@heroui/react";
+import userAvatar from '../../assets/avatar.jpg';
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -76,7 +77,7 @@ const Navbar = () => {
                         <div className="flex gap-5 items-center ">
                             <div className="hidden md:flex items-center gap-3">
                                 <h2 className="text-lg font-bold">{user?.name}</h2>
-                                <Image className="rounded-full" src={user?.image} alt="user avatar" width={40} height={40}></Image>
+                                <Image className="rounded-full" src={user?.image || userAvatar} alt="user avatar" width={40} height={40}></Image>
                             </div>
                     
                             <Button onClick={async () => await authClient.signOut()} className={'bg-yellow-400 text-black transition hover:bg-yellow-300 font-bold'}>Logout</Button>
