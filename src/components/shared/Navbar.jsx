@@ -1,4 +1,5 @@
 'use client'
+import { authClient } from "@/lib/auth-client";
 import { Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,6 +21,8 @@ const Navbar = () => {
         </li>
     </>
 
+    const userData = authClient.useSession();
+    const user = userData.data?.user;
     return (
         <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
             <header className="flex h-16 items-center justify-between px-6">
@@ -68,14 +71,24 @@ const Navbar = () => {
                 <ul className="hidden items-center gap-4 md:flex ">
                     {links}
                 </ul>
-                <div className="flex gap-2">
-                    <Link href={'/signin'}>
-                        <Button className={'bg-yellow-400 text-black transition hover:bg-yellow-300 font-bold'}>Login</Button>
-                    </Link>
-                    <Link href={'/signup'}>
-                        <Button className={'bg-yellow-400 text-black transition hover:bg-yellow-300 font-bold'}>Register</Button>
-                    </Link>
-                </div>
+                {
+                    user ? (
+                        <div className="flex gap-5 items-center ">
+                            <div className="hidden md:flex items-center gap-3">
+                                <h2 className="text-lg font-bold">{user?.name}</h2>
+                                <Image className="rounded-full" src={user?.image} alt="user avatar" width={40} height={40}></Image>
+                            </div>
+                    
+                            <Button onClick={async () => await authClient.signOut()} className={'bg-yellow-400 text-black transition hover:bg-yellow-300 font-bold'}>Logout</Button>
+                        </div>
+                    ) :
+                        (
+                            <Link href={'/signin'}>
+                                <Button className={'bg-yellow-400 text-black transition hover:bg-yellow-300 font-bold'}>Login</Button>
+                            </Link>
+
+                        )
+                }
             </header>
             {isMenuOpen && (
                 <div className="border-t border-separator md:hidden">

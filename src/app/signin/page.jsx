@@ -11,6 +11,7 @@ import {
     Label,
     TextField,
 } from "@heroui/react";
+import Link from "next/link";
 import { FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 
@@ -174,6 +175,7 @@ export default function SignInPage() {
                     Continue with Google
                 </Button>
 
+                <p className="text-center mt-5">Don&apos;t have an account? <Link href={'/signup'} className="text-yellow-600">Register</Link> </p>
             </Card>
 
         </div>
