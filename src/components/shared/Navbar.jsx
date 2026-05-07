@@ -69,7 +69,7 @@ const Navbar = () => {
                     {links}
                 </ul>
                 <div>
-                    <Button className={'bg-yellow-700 font-bold'}>Login</Button>
+                    <Button className={'bg-yellow-400 text-black transition hover:bg-yellow-300 font-bold'}>Login</Button>
                 </div>
             </header>
             {isMenuOpen && (
