@@ -1,6 +1,10 @@
+import { getBooks } from "@/lib/data";
 
 
-const AllBooksPage = () => {
+const AllBooksPage = async() => {
+
+    const books = await getBooks();
+    // console.log(books);
     return (
         <div>
             
