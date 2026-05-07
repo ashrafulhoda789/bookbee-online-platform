@@ -1,11 +1,13 @@
 import Banner from "@/components/homePage/Banner";
 import FeaturedSection from "@/components/homePage/FeaturedSection";
+import NewArrivalsBooks from "@/components/homePage/NewArrivalsBooks";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div >
       <Banner></Banner>
+      <NewArrivalsBooks></NewArrivalsBooks>
       <FeaturedSection></FeaturedSection>
     </div>
   );
