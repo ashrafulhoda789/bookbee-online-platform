@@ -5,7 +5,8 @@ import Image from "next/image";
 export const generateMetadata = async ({ params }) => {
     const { id } = await params;
 
-    const book = getBooksById(id);
+    const book = await getBooksById(id);
+    console.log(book);
 
     return {
         title: book?.title || "Not Found",
