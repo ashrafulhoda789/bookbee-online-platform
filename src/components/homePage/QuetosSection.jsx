@@ -6,7 +6,7 @@ const QuetosSection = async () => {
     const quetos = await getQuetos();
     return (
         <div className="my-10 bg-yellow-50 rounded-2xl py-6 px-2">
-
+            <h2 className="text-3xl font-bold mb-5">Reader&apos;s Corner</h2>
             <Marquee pauseOnHover={true} speed={50}>
                 {quetos.map((quote, index) => (
                     <div

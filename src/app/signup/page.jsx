@@ -168,7 +168,6 @@ export default function SignUpPage() {
                     <div className="flex gap-2 pt-2">
 
                         <Button
-                            onClick={handleGoogleSignIn}
                             type="submit"
                             className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold"
                         >
@@ -201,6 +200,7 @@ export default function SignUpPage() {
                 </div>
 
                 <Button
+                    onClick={handleGoogleSignIn}
                     variant="bordered"
                     className="w-full border border-gray-300 hover:bg-gray-100 text-gray-700 font-medium py-6"
                 >
