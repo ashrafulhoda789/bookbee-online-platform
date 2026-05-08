@@ -2,6 +2,18 @@ import BorrowButton from "@/components/shared/BorrowButton";
 import { getBooksById } from "@/lib/data";
 import Image from "next/image";
 
+export const generateMetadata = async ({ params }) => {
+    const { id } = await params;
+
+    const book = getBooksById(id);
+
+    return {
+        title: book?.title || "Not Found",
+        description: book?.description,
+    }
+}
+
+
 const BooksDetailPage = async ({ params }) => {
     const { id } = await params;
 
